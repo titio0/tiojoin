@@ -1,0 +1,8 @@
+name: tiojoin
+main: tiojoin\tiojoin
+version: B1
+author: tio
+api:
+- 4.0.0
+- 3.6.1
+- 3.0.0
