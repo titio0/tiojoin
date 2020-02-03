@@ -25,6 +25,7 @@ class tiojoin extends PluginBase implements Listener {
        }
      }
      public function Quit(PlayerQuitEvent $event) {
+       $event->setQuitMessage(false);
        $player = $event->getPlayer();
        $name = $player->getName();
        if ($player->isOp()) {
