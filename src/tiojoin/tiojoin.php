@@ -14,6 +14,7 @@ class tiojoin extends PluginBase implements Listener {
       $this->getLogger ()->alert("티오 접속플러그인 적용완료");
    }
    public function join(PlayerJoinEvent $event) {
+     $event->setJoinMessage(false);
      $player = $event->getPlayer();
      $name = $player->getName();
      if ($player->isOp()) {
